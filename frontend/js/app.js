@@ -60,7 +60,8 @@ function renderProjectsList(result) {
     result.forEach(project => {
     const cardEl = document.createElement('a');
     cardEl.classList.add('card');
-    cardEl.setAttribute('href', `/projects/?${project.slug.current}`);
+    /* cardEl.setAttribute('href', `/projects/?${project.current}`); */
+    
     const coverEl = document.createElement('img');
     coverEl.setAttribute('src', project.bilde);
     const titleEl = document.createElement('h4');
